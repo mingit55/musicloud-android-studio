@@ -60,7 +60,7 @@
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
-        android:layout_width="396dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -150,7 +150,7 @@
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView2"
-        android:layout_width="396dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="8dp"
         android:scrollbars="none"
@@ -347,160 +347,243 @@
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"
         app:srcCompat="@mipmap/sort" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="189dp"
-        android:layout_height="212dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="72dp"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_image"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            android:src="@drawable/music_10221424_500"
-            app:civ_border_color="#FF000000"
-            app:civ_border_width="0dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="189dp"
+            android:layout_height="212dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="169dp"
-            android:layout_height="154dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/music_2012_02_14" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/music_10221424_500"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/listName"
-            android:textColor="@color/colorText"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="169dp"
+                android:layout_height="154dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/music_2012_02_14" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/listCount"
-            android:textColor="@color/colorMuted"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/listName"
+                android:textColor="@color/colorText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:text="@string/listDuration"
-            android:textColor="@color/colorMuted"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@+id/imageView3"
-            app:layout_constraintTop_toTopOf="@+id/textView3" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/listCount"
+                android:textColor="@color/colorMuted"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/listDuration"
+                android:textColor="@color/colorMuted"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="@+id/textView3" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="189dp"
-        android:layout_height="212dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2">
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/circleImageView"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            android:src="#dddddd"
-            app:layout_constraintBottom_toBottomOf="@+id/view"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/view" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="189dp"
+            android:layout_height="212dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
 
-        <View
-            android:id="@+id/view"
-            android:layout_width="169dp"
-            android:layout_height="154dp"
-            android:background="#aaaaaa"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="#dddddd"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view" />
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
-            app:layout_constraintBottom_toBottomOf="@+id/view"
-            app:layout_constraintEnd_toEndOf="@+id/view"
-            app:layout_constraintStart_toStartOf="@+id/view"
-            app:layout_constraintTop_toTopOf="@+id/view"
-            app:srcCompat="@mipmap/readmore_plus" />
+            <View
+                android:id="@+id/view"
+                android:layout_width="169dp"
+                android:layout_height="154dp"
+                android:background="#aaaaaa"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="새로운 재생목록 추가"
-            android:textColor="#eeeeee"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@+id/view"
-            app:layout_constraintStart_toStartOf="@+id/view"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toTopOf="@+id/view"
+                app:srcCompat="@mipmap/readmore_plus" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="새로운 재생목록 추가"
+                android:textColor="#eeeeee"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/footer" />
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginBottom="-19dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:translationZ="30dp"
+            android:weightSum="10">
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="@android:dimen/app_icon_size"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/imageView9"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/play_circle" />
+            <View
+                android:id="@+id/view3"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_weight="4.5"
+                android:background="@color/colorPrimary" />
 
-        <ImageView
-            android:id="@+id/icon_playlist"
-            android:layout_width="29dp"
-            android:layout_height="29dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:onClick="goPlayList"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView9"
-            app:srcCompat="@mipmap/playlist" />
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:translationZ="10dp"
+                app:srcCompat="@drawable/cursor" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_weight="5.5"
+                android:background="#dddddd" />
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/icon_playlist"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/play_circle" />
+
+            <ImageView
+                android:id="@+id/icon_playlist"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginEnd="8dp"
+                android:onClick="goPlayList"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/playlist" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/music_10221424_500" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="SOLO"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView14"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="TextView"
+                android:textColor="@color/colorMuted"
+                app:layout_constraintStart_toEndOf="@+id/imageView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="1:25 / 2:57"
+                android:textColor="@color/colorMuted"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

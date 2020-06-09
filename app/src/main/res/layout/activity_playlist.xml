@@ -94,38 +94,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header">
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="410dp"
-            android:layout_height="73dp"
-            android:src="@drawable/playlist1" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="410dp"
-            android:layout_height="73dp"
-            android:src="@drawable/playlist2" />
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="410dp"
-            android:layout_height="73dp"
-            android:src="@drawable/playlist3" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="410dp"
-            android:layout_height="73dp"
-            android:src="@drawable/playlist4" />
-
-        <ImageView
-            android:id="@+id/imageView52"
-            android:layout_width="410dp"
-            android:layout_height="73dp"
-            android:src="@drawable/playlist5" />
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/header"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -162,20 +131,13 @@
         app:layout_constraintTop_toTopOf="@+id/icon2" />
 
     <LinearLayout
-        android:layout_width="413dp"
+        android:layout_width="match_parent"
         android:layout_height="109dp"
         android:layout_marginTop="16dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/icon2">
-
-        <ImageView
-            android:id="@+id/imageView53"
-            android:layout_width="410dp"
-            android:layout_height="73dp"
-            android:src="@drawable/playlist6" />
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/icon2" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
