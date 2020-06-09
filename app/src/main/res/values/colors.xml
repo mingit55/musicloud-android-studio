@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#519bce</color>
+    <color name="colorLight">#51b7ce</color>
+    <color name="colorPrimaryDark">#ffffff</color>  <!-- 핸드폰 상단 상태 표시줄에 사용됨 -->
+    <color name="colorAccent">#394650</color>
+    <color name="colorMuted">#a2abb8</color>
+    <color name="colorText">#707782</color>
+</resources>
