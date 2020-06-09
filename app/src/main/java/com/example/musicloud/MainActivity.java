@@ -15,6 +15,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void goSearch(View view){
+        Intent intent = new Intent(MainActivity.this, Search.class);
+        startActivity(intent);
+    }
+
     public void goPlayList(View view){
         Intent intent = new Intent(MainActivity.this, Playlist.class);
         startActivity(intent);
