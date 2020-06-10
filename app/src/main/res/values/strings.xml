@@ -1,23 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Musicloud</string>
-    <string name="icon">icon</string>
+    <string name="icon">아이콘</string>
     <string name="index_menu_1">즐겨 듣는 음악</string>
     <string name="index_menu_2">최근 재생한 음악</string>
     <string name="index_menu_3">최근 추가한 음악</string>
     <string name="index_menu_4">좋아요를 누른 음악</string>
-    <string name="music_name_1">뿜뿜</string>
-    <string name="music_name_2">삐삐</string>
-    <string name="music_name_3">Despacito</string>
-    <string name="music_name_4">SOLO</string>
-    <string name="artist_name_1">모모랜드</string>
-    <string name="artist_name_2">아이유(IU)</string>
-    <string name="artist_name_3">루이스 폰시(Luis Fonsi)</string>
-    <string name="artist_name_4">제니(JENNIE)</string>
-    <string name="duration_1">3:28</string>
-    <string name="duration_2">3:14</string>
-    <string name="duration_3">4:41</string>
-    <string name="duration_4">2:57</string>
-    <string name="listName">공부할 때 듣는 음악</string>
-    <string name="listDuration">20:16</string>
-    <string name="listCount">총 5곡</string>
+    <string name="music_list">재생목록</string>
+    <string name="new_music_list">새 재생목록 만들기</string>
+    <string name="online_search">온라인에서 검색</string>
+    <string name="mylist_search">업로드한 음악 (2건)</string>
+    <string name="offline">오프라인</string>
+    <string name="online_error">오프라인 상태에서는 이용하실 수 없습니다</string>
+    <string name="sign_in">로그인</string>
+    <string name="sign_up">회원가입</string>
+    <string name="nav_home">홈</string>
+    <string name="nav_music">음악 업로드</string>
+    <string name="nav_folder">폴더 스캔</string>
+    <string name="nav_search">온라인 검색</string>
+    <string name="nav_sleep">수면 모드</string>
+    <string name="nav_lang">언어 설정</string>
+    <string name="hint_email">이메일을 입력하세요</string>
+    <string name="hint_password">비밀번호를 입력하세요</string>
+    <string name="hint_repassword">비밀번호를 다시 입력하세요</string>
+    <string name="hint_name">이름을 입력하세요</string>
+    <string name="help_login">아직 계정이 없으신가요?</string>
+    <string name="help_join">로그인하기</string>
+    <string name="register_message">※ 회원가입시, 이용약관과 개인정보처리방침에 동의한 것으로 간주합니다.</string>
+    <string name="edit">수정</string>
+    <string name="apply">등록</string>
+    <string name="lyrics_search">가사 검색</string>
+    <string name="search">검색하기</string>
+    <string name="lyrics_edit">가사 정보 입력</string>
+    <string name="title">타이틀</string>
+    <string name="artist">아티스트</string>
+    <string name="search_result">검색 결과</string>
+    <string name="search_count">총 2개</string>
+    <string name="my_music_duration_label">내 음악 재생시간</string>
+    <string name="help_lyrics_small">알맞은 가사가 없으신가요?</string>
+    <string name="help_lyrics">직접 등록해보세요</string>
+    <string name="accept">적용하기</string>
+    <string name="lyrics">가사</string>
+    <string name="fit_sync">싱크 맞추기</string>
+    <string name="Initialization">초기화</string>
+    <string name="test">테스트</string>
+    <string-array name="lang_array">
+        <item>한국어</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="sync_array">
+        <item>1줄 싱크</item>
+        <item>2줄 싱크</item>
+        <item>3줄 싱크</item>
+    </string-array>
 </resources>

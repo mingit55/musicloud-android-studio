@@ -16,12 +16,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goSearch(View view){
-        Intent intent = new Intent(MainActivity.this, Search.class);
+        Intent intent = new Intent(this, Search.class);
         startActivity(intent);
     }
 
     public void goPlayList(View view){
-        Intent intent = new Intent(MainActivity.this, Playlist.class);
+        Intent intent = new Intent(this, Playlist.class);
+        startActivity(intent);
+    }
+
+    public void goPlayInfo(View view){
+        Intent intent = new Intent(this, Playinfo.class);
+        startActivity(intent);
+    }
+
+    public void goBack(View view){
+        super.onBackPressed();
+    }
+
+    public void goNav(View view){
+        Intent intent = new Intent(this, Nav.class);
         startActivity(intent);
     }
 }

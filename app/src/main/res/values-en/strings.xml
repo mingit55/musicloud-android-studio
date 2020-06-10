@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Musicloud</string>
+    <string name="icon">icon</string>
+    <string name="index_menu_1">Often Played</string>
+    <string name="index_menu_2">Recently Played</string>
+    <string name="index_menu_3">Recently Added</string>
+    <string name="index_menu_4">Video with Like</string>
+    <string name="music_list">Playlist</string>
+    <string name="new_music_list">Create New List</string>
+    <string name="online_search">Search Online</string>
+    <string name="mylist_search">Uploaded Music (2)</string>
+    <string name="offline">Offline</string>
+    <string name="online_error">You can\'t use it while offline</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_music">Upload Music</string>
+    <string name="nav_folder">Scan Folder</string>
+    <string name="nav_search">Search Online</string>
+    <string name="nav_sleep">Sleep Mode</string>
+    <string name="nav_lang">Language</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_repassword">Password Confirm</string>
+    <string name="hint_name">Name</string>
+    <string name="register_message">※ When registering as a member, it is deemed that you have agreed to the terms and conditions of use and the privacy policy.</string>
+    <string name="help_login">New to Musicloud?</string>
+    <string name="help_join">Sign In</string>
+    <string name="edit">Edit</string>
+    <string name="apply">Apply</string>
+    <string name="lyrics_search">Search Lyrics</string>
+    <string name="search">Search</string>
+    <string name="lyrics_edit">Enter Information</string>
+    <string name="title">Title</string>
+    <string name="artist">Artist</string>
+    <string name="search_result">Result</string>
+    <string name="search_count">Found 2 Items</string>
+    <string name="my_music_duration_label">music\'s duration</string>
+    <string name="help_lyrics_small">Do you have any lyrics?</string>
+    <string name="help_lyrics">Try Yourself</string>
+    <string name="accept">Accept</string>
+    <string name="lyrics">Lyrics</string>
+    <string name="fit_sync">Fit Synchronize</string>
+    <string name="Initialization">Init</string>
+    <string name="test">Test</string>
+    <string-array name="sync_array">
+        <item>Line 1</item>
+        <item>Line 2</item>
+        <item>Line 3</item>
+    </string-array>
+</resources>

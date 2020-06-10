@@ -14,8 +14,22 @@ public class Search extends AppCompatActivity {
         setContentView(R.layout.activity_search);
     }
 
-    public void goPlaylist(View view){
+    public void goSearch(View view){
+        Intent intent = new Intent(this, Search.class);
+        startActivity(intent);
+    }
+
+    public void goPlayList(View view){
         Intent intent = new Intent(this, Playlist.class);
         startActivity(intent);
+    }
+
+    public void goPlayInfo(View view){
+        Intent intent = new Intent(this, Playinfo.class);
+        startActivity(intent);
+    }
+
+    public void goBack(View view){
+        super.onBackPressed();
     }
 }
